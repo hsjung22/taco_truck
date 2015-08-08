@@ -1,0 +1,248 @@
+<div ng-controller="yelpController">
+
+<div id="page-wrapper">
+
+			<!-- Header -->
+	<div id="header-wrapper">
+		<div id="header" class="container">
+
+			<!-- Logo -->
+				<h1 id="logo">Los Tacos Tres Reyes</h1>
+				<p>Mexican Food Truck</p>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a class="icon fa-home" href="#/"><span>Home</span></a></li>
+						<li><a class="icon fa-cog" href="" ng-click="scrollTo('menu')"><span>Menu</span></a></li>
+						<li><a class="icon fa-retweet" href="" ng-click="scrollTo('locations')"><span>Locations</span></a></li>
+					</ul>
+				</nav>
+
+		</div>
+	</div>
+
+			<!-- Features -->
+				<div id="features-wrapper">
+					<section id="features" class="container">
+						<header>
+							<h2>Most Recent Review From <strong>Yelp</strong>!</h2>
+						</header>
+						<div class="row">
+							<div class="8u 12u(mobile)">
+
+								<!-- Feature -->
+									<section>
+										<p>"{{yelpDataTres.reviews[0].excerpt}}"</p>
+										<p>-{{yelpDataTres.reviews[0].user.name}}</p>
+									</section>
+
+							</div>
+							<div class="4u 12u(mobile)">
+
+								<!-- Feature -->
+									<section>
+										<a href="http://www.yelp.com/biz/tacos-los-tres-reyes-san-jose"><img src="../images/yelp_logo.png"></a><br>
+										<img class="y-center" src="{{yelpDataTres.reviews[0].rating_image_large_url}}" alt="rating">
+									</section>
+
+							</div>
+
+						</div>
+					</section>
+				</div>
+
+
+
+
+			<div id="menu">
+				<div id="banner-wrapper">
+					<div class="inner">
+						<section id="banner" class="container">
+							<p>Menu</p>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div id="main" class="container">
+						<div class="row">
+
+							<!-- Content -->
+								<div id="content" class="8u 12u(mobile)">
+
+									<!-- Post -->
+										<article class="box post textcenter">
+											<header>
+												<h2>Taco - $1.90</h2>
+												<h2>Burrito - $6.50</h2>
+												<h2>Quesadilla - $6.50</h2>
+												<h2>Torta - $6.50</h2>
+											</header>
+
+
+
+										
+										</article>
+
+								</div>
+
+							<!-- Sidebar -->
+								<div id="sidebar" class="4u 12u(mobile)">
+
+									<!-- Excerpts -->
+										<section>
+											<ul class="divided">
+												<li>
+
+													<!-- Excerpt -->
+														<article class="box excerpt">
+															<header>
+																<h3 class="textcenter">Choices of meat</h3>
+															</header>
+																	<p class="textcenter">Asada</p>
+																	<p class="textcenter">Pastor</p>
+																	<p class="textcenter">Suadero</p>
+																	<p class="textcenter">Lengua</p>
+																	<p class="textcenter">Cabeza</p>
+																	<p class="textcenter">Chorizo</p>
+																	<p class="textcenter">Pollo</p>
+																	<p class="textcenter">Chicharron</p>
+														</article>
+
+												</li>
+											</ul>
+										</section>
+
+								</div>
+
+						</div>
+					</div>
+				</div>
+
+							<!-- Banner -->
+			<div id="locations">
+				<div id="banner-wrapper">
+					<div class="inner">
+						<section id="banner" class="container">
+							<p>Locations</p>
+						</section>
+					</div>
+				</div>
+			</div>
+
+
+				<!-- Main -->
+				<div id="main-wrapper">
+					<div id="main" class="container">
+						<div class="row">
+
+							<!-- Content -->
+								<div id="content" class="6u 12u(mobile)">
+
+										<article class="box post textcenter">
+											<header>
+												<h2>Central San Jose</h2>
+											</header>
+										</article>
+
+								</div>
+
+								<div id="content" class="6u 12u(mobile)">
+
+									<section>
+										<iframe
+											width="600"
+											height="450"
+											frameborder="0" style="border:0"
+											src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCK0Z2kaf_gVZnvpfByc5h-lfQCgp5tTg0
+											&q=Tacos Los 3 Reyes,San Jose+CA" allowfullscreen>
+										</iframe>
+									</section>
+
+								</div>
+
+						</div>
+						<div class="row">
+
+							<!-- Content -->
+								<div id="content" class="6u 12u(mobile)">
+
+										<article class="box post textcenter">
+											<header>
+												<h2>Alum Rock</h2>
+											</header>
+										</article>
+
+								</div>
+
+								<div id="content" class="6u 12u(mobile)">
+
+									<section>
+										<iframe
+											width="600"
+											height="450"
+											frameborder="0" style="border:0"
+											src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCK0Z2kaf_gVZnvpfByc5h-lfQCgp5tTg0
+											&q=Tacos Los 3 Reyes,2520 Story Rd, San Jose, CA 95122" allowfullscreen>
+										</iframe>
+									</section>
+
+								</div>
+
+						</div>
+						<div class="row">
+
+							<!-- Content -->
+								<div id="content" class="6u 12u(mobile)">
+
+										<article class="box post textcenter">
+											<header>
+												<h2>Fairgrounds</h2>
+											</header>
+										</article>
+
+								</div>
+
+								<div id="content" class="6u 12u(mobile)">
+
+									<section>
+										<iframe
+											width="600"
+											height="450"
+											frameborder="0" style="border:0"
+											src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCK0Z2kaf_gVZnvpfByc5h-lfQCgp5tTg0
+											&q=2410 S Monterey St" allowfullscreen>
+										</iframe>
+									</section>
+
+								</div>
+
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div id="footer" class="container">
+							<div class="12u 12u(mobile)">
+								<section>
+									<p class="textcenter">Created using design from <a href="http://html5up.net">HTML5 UP</a> by HyunJ</p>
+								</section>
+							</div>
+					</div>
+
+				</div>
+
+		</div>
+
+
+
+</div>

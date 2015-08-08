@@ -1,0 +1,26 @@
+{
+  "name": "angular-follow",
+  "main": "./angular-follow.js",
+  "dependencies": {
+    "angular": "~1.2.1"
+  },
+  "readme": "angular-follow\n====================\n\nbower repo for angular-follow.js",
+  "readmeFilename": "README.md",
+  "_id": "angular-follow@0.1",
+  "description": "bower-angular-follow ==================",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brendan-skyrkt/angular-follow.git"
+  },
+  "homepage": "https://github.com/brendan-skyrkt/angular-follow",
+  "_release": "5634f6a196",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5634f6a196f1b8712feeda078ac38cc48404532c"
+  },
+  "_source": "git://github.com/brendan-skyrkt/angular-follow.git",
+  "_target": "*",
+  "_originalSource": "angular-follow",
+  "_direct": true
+}
